@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright (c) 2018.
+  ~ AndroidSDKMirror
+  -->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Android SDK Mirror File List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+
+<p th:each="androidFile: ${androidFiles}">
+<div th:each="androidFile : ${androidFiles}">
+    <a th:href="@{${androidFile.url}}">  <label th:text="${androidFile.name}"></label>
+
+    </a>
+    <label th:text="${androidFile.size }"></label>
+    <label th:text="${androidFile.date }"></label>
+
+</div>
+
+<!--<div th:text="${androidFile.size}"></div>-->
+<div>---------------------------------------------------------</div>
+</p>
+</body>
+</html>
