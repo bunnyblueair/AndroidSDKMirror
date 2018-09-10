@@ -29,7 +29,7 @@ you can init force by access `http://ip:8081/sync/yes` manual, you can do it onc
 developer can view this mirror address `http://ip:8081/`
 
 ```shell
-export SDK_TEST_BASE_URL=http://127.0.0.1:8081/android/repository/
+export SDK_TEST_BASE_URL=http://ip:8081/android/repository/
 open -a 'Android Studio'
 ```
 
